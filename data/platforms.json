@@ -1,0 +1,204 @@
+{
+  "_meta": {
+    "name": "短剧平台白名单",
+    "purpose": "枚举与红果短剧同类的正规短剧平台，供采集源配置与前端平台筛选使用。",
+    "source": "QuestMobile《2026短剧行业洞察报告》、DataEye研究院2026年数据、国泰海通/华西证券2026行业研报、广电总局《微短剧发展管理办法》。检索日期 2026-11-21。",
+    "principles": [
+      "仅收录平台自有正规短剧产品（独立App / 小程序 / 长视频短剧场），不收录第三方聚合导航站。",
+      "不收录网盘搜索、资源下载、解析站、'无广告修改版'分发站，此类站点违反 README 合规边界第 3 条。",
+      "official_site 与 scheme 仅填写可确认的官方信息；无法核实的一律置为 null 并标注 need_verify，禁止猜测填写。",
+      "准入不等于可抓取：实际采集仍须逐平台遵守 robots.txt 与限速约束。"
+    ],
+    "status_legend": {
+      "active": "正常运营，可作为采集/跳转候选",
+      "need_verify": "平台存在但官网域名或 scheme 待官方渠道核实",
+      "excluded": "因合规原因排除，仅作留痕"
+    }
+  },
+  "platforms": [
+    {
+      "id": "hongguo",
+      "name": "红果免费短剧",
+      "aliases": ["红果短剧", "红果免费短剧"],
+      "operator": "抖音集团（北京笔墨留香科技运营）",
+      "tier": "第一梯队",
+      "model": "免费+IAA广告变现",
+      "official_site": "https://hongguoduanju.com/",
+      "site_verified": true,
+      "site_note": "实测核验：详情页 ICP 京ICP备2021028909号-43（北京笔墨留香科技，红果运营主体），静态资源来自字节系 fqnovelstatic.com；robots Allow:/，禁止 /query /series /player。",
+      "scheme": null,
+      "status": "active"
+    },
+    {
+      "id": "fanqie_free",
+      "name": "番茄免费短剧",
+      "aliases": ["番茄短剧", "番茄免费短剧"],
+      "operator": "字节跳动（番茄系）",
+      "tier": "第二梯队",
+      "model": "免费+IAA，番茄小说IP改编",
+      "official_site": null,
+      "scheme": null,
+      "status": "need_verify",
+      "note": "番茄免费短剧为字节系独立App，未找到可信官方网页域名。"
+    },
+    {
+      "id": "hema",
+      "name": "河马剧场",
+      "aliases": ["河马短剧", "河马剧场"],
+      "operator": "点众科技（北京点众快看科技）",
+      "tier": "第二梯队",
+      "model": "付费+免费双轮驱动",
+      "official_site": "https://www.kuaikaw.cn/",
+      "site_verified": true,
+      "site_note": "2026-11-21 实测核验：title=河马剧场官网；ICP 京ICP备17057640号-55（主体与点众快看一致）；robots Allow:/；首页 63 个 /drama/{id} 公开详情页。已启用采集。",
+      "scheme": null,
+      "status": "active",
+      "note": "已接入采集：parser=nextjs_bookinfo，可提取主演/题材/封面/简介。"
+    },
+    {
+      "id": "fanhua",
+      "name": "繁花剧场",
+      "aliases": ["繁华剧场"],
+      "operator": "点众科技",
+      "tier": "第二梯队",
+      "model": "付费+免费",
+      "official_site": null,
+      "scheme": null,
+      "status": "need_verify"
+    },
+    {
+      "id": "jiuzhou",
+      "name": "九州短剧",
+      "aliases": ["九州文化"],
+      "operator": "嘉兴九州文化传媒",
+      "tier": "第二梯队",
+      "model": "小程序付费，4000+版权储备",
+      "official_site": null,
+      "scheme": null,
+      "status": "need_verify"
+    },
+    {
+      "id": "xingya",
+      "name": "星芽短剧",
+      "aliases": ["星芽免费短剧"],
+      "operator": "嘉兴九州文化传媒",
+      "tier": "第二梯队",
+      "model": "免费+IAA",
+      "official_site": null,
+      "scheme": null,
+      "status": "need_verify",
+      "note": "搜索结果中同一平台出现 xingya.com.cn / ajpak.cn / xingyaduanju.com 三个互相矛盾的'官网'，全部弃用。"
+    },
+    {
+      "id": "maiya",
+      "name": "麦芽短剧",
+      "aliases": ["麦芽剧场"],
+      "operator": "重庆麦芽传媒",
+      "tier": "第二梯队",
+      "model": "制作+发行兼具，男频内容",
+      "official_site": null,
+      "scheme": null,
+      "status": "need_verify"
+    },
+    {
+      "id": "xifan",
+      "name": "喜番免费短剧",
+      "aliases": ["喜番短剧"],
+      "operator": "快手（北京喜番科技）",
+      "tier": "第二梯队",
+      "model": "免费+IAA，档期化精品运营",
+      "official_site": null,
+      "scheme": null,
+      "status": "need_verify"
+    },
+    {
+      "id": "wechat_duanju",
+      "name": "微信短剧",
+      "aliases": ["绿泡泡短剧", "微信短剧小程序"],
+      "operator": "腾讯",
+      "tier": "生态入口",
+      "model": "小程序生态，社交裂变+IAP付费",
+      "official_site": null,
+      "scheme": null,
+      "status": "need_verify"
+    },
+    {
+      "id": "douyin_duanju",
+      "name": "抖音短剧",
+      "aliases": ["抖音短剧版权中心"],
+      "operator": "抖音集团",
+      "tier": "内容平台",
+      "model": "端内信息流+小程序+版权中心",
+      "official_site": null,
+      "scheme": null,
+      "status": "need_verify"
+    },
+    {
+      "id": "kuaishou_duanju",
+      "name": "快手短剧",
+      "aliases": ["星芒短剧"],
+      "operator": "快手",
+      "tier": "内容平台",
+      "model": "端内剧场+电商闭环",
+      "official_site": null,
+      "scheme": null,
+      "status": "need_verify"
+    },
+    {
+      "id": "iqiyi_duanju",
+      "name": "爱奇艺微剧场",
+      "aliases": ["爱奇艺短剧场"],
+      "operator": "爱奇艺",
+      "tier": "长视频短剧场",
+      "model": "横屏精品短剧，会员分账",
+      "official_site": null,
+      "scheme": null,
+      "status": "need_verify"
+    },
+    {
+      "id": "tencent_duanju",
+      "name": "腾讯视频短剧",
+      "aliases": ["火龙漫剧"],
+      "operator": "腾讯",
+      "tier": "长视频短剧场",
+      "model": "会员分账+微信生态引流",
+      "official_site": null,
+      "scheme": null,
+      "status": "need_verify"
+    },
+    {
+      "id": "youku_duanju",
+      "name": "优酷短剧",
+      "aliases": ["优酷微剧场", "优酷微短剧"],
+      "operator": "阿里大文娱",
+      "tier": "长视频短剧场",
+      "model": "会员分账",
+      "official_site": "https://www.youku.com/",
+      "mobile_site": "https://m.youku.com/",
+      "site_verified": true,
+      "site_note": "2026-11-21 实测核验：youku.com 为优酷官方主域（京ICP证060288号、京ICP备06050721号-1，举报邮箱 youkujubao@service.alibaba.com）；PC 首页与移动端 m.youku.com 均设有短剧频道，但短剧无独立官方域名，为主站内栏目。",
+      "scheme": null,
+      "status": "active",
+      "note": "官方链接可填主域作跳转；但 PC 站有人机验证、robots.txt 返回 404（未明确授权采集），且无公开可解析的短剧详情页，故不启用采集（sources 中保持禁用）。"
+    },
+    {
+      "id": "mango_duanju",
+      "name": "芒果TV大芒计划",
+      "aliases": ["芒果短剧"],
+      "operator": "芒果超媒",
+      "tier": "长视频短剧场",
+      "model": "会员分账+联合投资",
+      "official_site": null,
+      "scheme": null,
+      "status": "need_verify"
+    }
+  ],
+  "excluded": [
+    { "name": "短剧库", "reason": "聚合抖音/快手/小程序爆款并提供网盘打包下载，违反合规边界第 3 条" },
+    { "name": "短剧猫", "reason": "夸克网盘直链聚合站，非官方分享链接" },
+    { "name": "好剧搜 / 夸克盘搜 / 短剧查查", "reason": "网盘搜索引擎，非平台原生链接" },
+    { "name": "五五短剧", "reason": "第三方免费聚合站，线路多且支持本地缓存，非官方来源" },
+    { "name": "各类聚合导航页与'无广告版/开心版'下载站", "reason": "第三方分发或聚合，存在版权与安全风险" },
+    { "name": "fanqieduanju.hl.cn（自称番茄短剧）", "reason": "2026-11-21 实测判定为仿冒/聚合落地页：①域名为 .hl.cn 地方后缀，与字节/番茄系官方域名无关；②页面无 ICP 备案号；③无 robots.txt 与 sitemap；④首页为单页营销落地页，站内链接全为 # 锚点，无真实剧目详情页或官方分享链接。违反 README 合规边界第 3 条，禁止接入。" }
+  ]
+}

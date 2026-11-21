@@ -1,0 +1,86 @@
+{
+  "_meta": {
+    "name": "短剧平台采集源配置（可插拔）",
+    "purpose": "声明每个平台的采集入口与解析方式。新增平台只需在此追加一条配置，无需修改采集代码。",
+    "principles": [
+      "enabled=true 才会被采集；默认仅启用域名已核验且 robots 允许的红果。",
+      "official_site 未核实、robots 禁止采集、或仅为 App 无公开详情页的平台，保持 enabled=false，禁止猜测域名。",
+      "parser 取值：ldjson_tvseason（schema.org 详情页，通用）/ json（JSON API + field_map）。",
+      "entry 取值：home（首页推荐位提取详情链接）/ sitemap（sitemap 提取详情链接）/ api（直接抓 JSON 列表）。",
+      "所有采集仍遵守 WebSource 的 UA 轮换、限速、重试与 robots.txt 检查。"
+    ],
+    "status_legend": {
+      "active": "域名已核验、robots 允许、有可解析公开详情页，可启用采集",
+      "need_verify": "平台存在但官方域名/详情页/scheme 待核实，enabled 必须为 false"
+    }
+  },
+  "sources": [
+    {
+      "id": "hongguo",
+      "name": "红果免费短剧",
+      "platform": "红果短剧",
+      "enabled": true,
+      "status": "active",
+      "entry": "sitemap",
+      "parser": "ldjson_tvseason",
+      "home_url": "https://hongguoduanju.com/",
+      "sitemap_url": "https://hongguoduanju.com/seo-important.xml",
+      "detail_url_template": "https://hongguoduanju.com/detail?series_id={id}",
+      "detail_id_pattern": "href=\"/detail\\?series_id=(\\d+)\"",
+      "limit": 200,
+      "note": "域名经 ICP 备案(京ICP备2021028909号-43)核验；robots 允许 /detail，禁止 /query /series /player。入口已从首页(仅27条热播)切换为 sitemap(seo-important.xml，2000 条公开详情页)；默认 limit=200，命令行 --limit N 可覆盖(上限2000)。"
+    },
+    {
+      "id": "fanqie_free",
+      "name": "番茄免费短剧",
+      "platform": "番茄短剧",
+      "enabled": false,
+      "status": "need_verify",
+      "entry": "",
+      "parser": "",
+      "home_url": null,
+      "note": "字节系独立 App，无已核实的官方网页详情页。用户提供的 fanqieduanju.hl.cn 经实测为仿冒/聚合落地页，已列入排除。"
+    },
+    {
+      "id": "hema",
+      "name": "河马剧场",
+      "platform": "河马短剧",
+      "enabled": true,
+      "status": "active",
+      "entry": "home",
+      "parser": "nextjs_bookinfo",
+      "home_url": "https://www.kuaikaw.cn/",
+      "detail_url_template": "https://www.kuaikaw.cn/drama/{id}",
+      "detail_id_pattern": "href=\"/drama/(\\d+)\"",
+      "limit": 30,
+      "note": "域名经实测核验为官方站：title=河马剧场官网；ICP 京ICP备17057640号-55（主体与点众快看一致）；robots Allow:/，禁止 /download /search 及带查询参数 URL；首页 63 个 /drama/{id} 公开详情页（无查询参数，合规）。详情页 __NEXT_DATA__.bookInfoVo 含主演/题材/封面/简介。"
+    },
+    {
+      "id": "iqiyi_duanju",
+      "name": "爱奇艺微剧场",
+      "platform": "爱奇艺",
+      "enabled": false,
+      "status": "need_verify",
+      "home_url": null,
+      "note": "robots.txt 专门屏蔽 AI 爬虫（claudebot 等 Disallow:/），合规上不可采集。"
+    },
+    {
+      "id": "tencent_duanju",
+      "name": "腾讯视频短剧",
+      "platform": "腾讯视频",
+      "enabled": false,
+      "status": "need_verify",
+      "home_url": null,
+      "note": "robots.txt Disallow:/，不可采集。"
+    },
+    {
+      "id": "youku_duanju",
+      "name": "优酷短剧",
+      "platform": "优酷",
+      "enabled": false,
+      "status": "need_verify",
+      "home_url": "https://www.youku.com/",
+      "note": "官网主域已核验（京ICP证060288号/京ICP备06050721号-1），短剧为主站内频道、无独立官方域名；PC 站有人机验证、robots.txt 返回 404，无公开可解析的短剧详情页，故仅作跳转链接、不启用采集。"
+    }
+  ]
+}

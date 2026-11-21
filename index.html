@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>短剧别名检索</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --bg-elev: #161b22;
+    --bg-card: #1c2129;
+    --bg-hover: #232a35;
+    --border: #30363d;
+    --border-soft: #242b33;
+    --text: #e6edf3;
+    --text-dim: #9198a1;
+    --text-faint: #6e7681;
+    --accent: #58a6ff;
+    --accent-hover: #79b8ff;
+    --accent-soft: rgba(88, 166, 255, 0.12);
+    --ai: #d29922;
+    --ai-soft: rgba(210, 153, 34, 0.14);
+    --danger: #f85149;
+    --ok: #3fb950;
+    --radius: 10px;
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+
+  /* Header */
+  header { padding: 48px 0 24px; text-align: center; }
+  .logo {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 15px; font-weight: 600; letter-spacing: .5px;
+    color: var(--accent); margin-bottom: 14px;
+  }
+  .logo svg { width: 22px; height: 22px; }
+  h1 {
+    font-size: clamp(28px, 5vw, 40px); font-weight: 700;
+    letter-spacing: -1px; margin-bottom: 10px;
+    background: linear-gradient(135deg, #e6edf3 20%, #8b949e 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .subtitle { color: var(--text-dim); font-size: 15px; }
+
+  /* Search */
+  .search-area { position: sticky; top: 0; z-index: 20; padding: 8px 0 12px; background: linear-gradient(var(--bg) 70%, transparent); }
+  .search-box {
+    position: relative; display: flex; align-items: center;
+    background: var(--bg-elev); border: 1px solid var(--border);
+    border-radius: 14px; padding: 0 16px;
+    transition: border-color .18s, box-shadow .18s;
+    box-shadow: var(--shadow);
+  }
+  .search-box:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .search-box svg { width: 20px; height: 20px; color: var(--text-faint); flex-shrink: 0; }
+  #q {
+    flex: 1; background: none; border: 0; outline: 0; color: var(--text);
+    font-size: 17px; padding: 15px 12px; font-family: inherit;
+  }
+  #q::placeholder { color: var(--text-faint); }
+  .clear-btn {
+    display: none; background: none; border: 0; color: var(--text-faint);
+    cursor: pointer; font-size: 22px; line-height: 1; padding: 4px 8px;
+  }
+  .clear-btn:hover { color: var(--text); }
+  .kbd {
+    font-size: 11px; color: var(--text-faint); border: 1px solid var(--border);
+    border-radius: 5px; padding: 2px 6px; white-space: nowrap;
+  }
+
+  /* Toolbar */
+  .toolbar {
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 12px; padding: 14px 2px 8px;
+  }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    background: var(--bg-elev); border: 1px solid var(--border); color: var(--text-dim);
+    padding: 6px 13px; border-radius: 999px; font-size: 13px; cursor: pointer;
+    transition: all .15s; user-select: none;
+  }
+  .chip:hover { border-color: var(--text-faint); color: var(--text); }
+  .chip.active { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+  .meta-info { color: var(--text-faint); font-size: 13px; }
+
+  /* Cards */
+  .results { display: grid; gap: 14px; padding: 8px 0 40px; }
+  .card {
+    background: var(--bg-card); border: 1px solid var(--border-soft);
+    border-radius: var(--radius); padding: 18px 20px;
+    transition: border-color .15s, transform .15s;
+  }
+  .card:hover { border-color: var(--border); transform: translateY(-1px); }
+  .card-head { display: flex; align-items: flex-start; gap: 14px; }
+  .cover {
+    width: 74px; height: 100px; border-radius: 7px; object-fit: cover;
+    flex-shrink: 0; background: var(--bg-hover); border: 1px solid var(--border-soft);
+  }
+  .cover-fallback {
+    width: 74px; height: 100px; border-radius: 7px; flex-shrink: 0;
+    background: linear-gradient(145deg, #2a3340, #1c2129);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-faint); font-size: 26px; border: 1px solid var(--border-soft);
+  }
+  .card-main { flex: 1; min-width: 0; }
+  .title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
+  .title { font-size: 18px; font-weight: 650; color: var(--text); }
+  .ai-badge {
+    font-size: 11px; font-weight: 600; color: var(--ai);
+    background: var(--ai-soft); border: 1px solid rgba(210,153,34,.3);
+    padding: 1px 7px; border-radius: 5px;
+  }
+  .record-no { font-size: 12px; color: var(--text-faint); }
+  .intro {
+    color: var(--text-dim); font-size: 13.5px; margin: 8px 0;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .aliases { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+  .alias {
+    font-size: 12px; color: var(--text-dim); background: var(--bg-hover);
+    border-radius: 5px; padding: 2px 8px;
+  }
+  .alias.typo { color: #db61a2; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .tag {
+    font-size: 11.5px; color: var(--accent); background: var(--accent-soft);
+    border-radius: 4px; padding: 2px 8px;
+  }
+  .card-foot {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+    margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border-soft);
+  }
+  .actors { font-size: 12px; color: var(--text-faint); margin-right: auto; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 13px; font-family: inherit; cursor: pointer;
+    padding: 7px 13px; border-radius: 7px; text-decoration: none;
+    border: 1px solid var(--border); background: var(--bg-elev); color: var(--text);
+    transition: all .15s;
+  }
+  .btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+  .btn svg { width: 13px; height: 13px; }
+  .btn-primary { background: var(--accent); border-color: var(--accent); color: #0d1117; font-weight: 600; }
+  .btn-primary:hover { background: var(--accent-hover); color: #0d1117; }
+  .no-link { font-size: 12px; color: var(--text-faint); font-style: italic; }
+
+  /* States */
+  .empty { text-align: center; padding: 70px 20px; color: var(--text-dim); }
+  .empty .big { font-size: 40px; margin-bottom: 12px; opacity: .5; }
+  .loading { text-align: center; padding: 60px 20px; color: var(--text-dim); }
+  .spinner {
+    display: inline-block; width: 26px; height: 26px; border: 3px solid var(--border);
+    border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite;
+    margin-bottom: 14px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* Notice banners */
+  .banner {
+    border-radius: var(--radius); padding: 12px 16px; font-size: 13px;
+    margin-bottom: 14px; line-height: 1.6;
+  }
+  .banner-warn { background: var(--ai-soft); border: 1px solid rgba(210,153,34,.3); color: #e3b341; }
+  .banner-info { background: var(--accent-soft); border: 1px solid rgba(88,166,255,.3); color: var(--accent); }
+  .banner select, .banner input[type=file] { font-family: inherit; }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--border-soft); padding: 28px 0 40px;
+    color: var(--text-faint); font-size: 12.5px; text-align: center; line-height: 1.9;
+  }
+  footer a { color: var(--text-dim); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+
+  @media (max-width: 600px) {
+    header { padding: 32px 0 18px; }
+    .card { padding: 15px; }
+    .cover, .cover-fallback { width: 58px; height: 80px; }
+    .title { font-size: 16px; }
+    .kbd { display: none; }
+    .actors { width: 100%; margin-bottom: 2px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m10 8 6 4-6 4V8z" fill="currentColor" stroke="none"/>
+      </svg>
+      短剧别名检索 · ALIAS SEARCH
+    </div>
+    <h1>找不到剧名？用别名搜</h1>
+    <p class="subtitle">支持标准剧名、别名、错别字、主演与剧情关键词检索</p>
+  </header>
+
+  <div class="search-area">
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="q" type="text" placeholder="输入剧名或别名，例如：都市仙尊、赘婿、重生仙尊…" autocomplete="off" spellcheck="false">
+      <button class="clear-btn" id="clear" title="清空">×</button>
+      <span class="kbd">/</span>
+    </div>
+  </div>
+
+  <div id="banners"></div>
+
+  <div class="toolbar">
+    <div class="filters" id="filters"></div>
+    <div class="meta-info" id="metaInfo"></div>
+  </div>
+
+  <main class="results" id="results">
+    <div class="loading"><div class="spinner"></div><div>正在加载索引…</div></div>
+  </main>
+
+  <footer id="footer">
+    <div id="footDesc">正在加载站点信息…</div>
+    <div>如涉及侵权，请联系投诉邮箱：<a id="footEmail" href="#">—</a></div>
+    <div>平台链接均为官方来源；<span id="footerCount">—</span> · 数据生成时间：<span id="genTime">—</span></div>
+    <div style="margin-top:8px" id="footLegal"></div>
+  </footer>
+</div>
+
+<script>
+// 构建脚本注入点：build_frontend.py / build_site.py 会把此行替换为内联索引数据
+var __EMBEDDED_PLACEHOLDER__ = null;
+// 站点合规配置注入点
+var __SITE_CONFIG__ = {
+  site_name: "短剧别名检索",
+  complaint_email: "copyright@NEED_FILL.example.com",
+  icp_no: "NEED_FILL：ICP备案号",
+  icp_link: "https://beian.miit.gov.cn/",
+  links: { privacy: "privacy.html", copyright: "privacy.html#copyright", takedown: "privacy.html#takedown" }
+};
+(function () {
+  'use strict';
+
+  // ===== 内置降级搜索（Fuse.js 不可用时使用，零依赖） =====
+  // 字段权重与 README 一致：aliases(2.0) > standard_title(1.5) > actors(0.8) > intro(0.3)
+  function norm(s) { return String(s == null ? '' : s).toLowerCase().trim(); }
+  function subseqScore(text, q) {
+    // 子序列模糊匹配：连续命中得分更高，用于错别字/省略容错
+    text = norm(text); q = norm(q);
+    if (!q) return 0;
+    if (text === q) return 100;
+    if (text.indexOf(q) >= 0) return 80;
+    var ti = 0, hits = 0, streak = 0, best = 0;
+    for (var qi = 0; qi < q.length; qi++) {
+      var found = false;
+      while (ti < text.length) {
+        if (text[ti] === q[qi]) { found = true; streak++; best = Math.max(best, streak); hits++; ti++; break; }
+        streak = 0; ti++;
+      }
+      if (!found) return 0;
+    }
+    return Math.round((hits / q.length) * 40 + best * 2);
+  }
+  function fallbackScore(drama, q) {
+    var s = 0;
+    s += subseqScore(drama.standard_title, q) * 1.5;
+    for (var i = 0; i < (drama.aliases || []).length; i++) {
+      s = Math.max(s, subseqScore(drama.aliases[i], q) * 2.0);
+    }
+    for (var j = 0; j < (drama.actors || []).length; j++) {
+      s = Math.max(s, subseqScore(drama.actors[j], q) * 0.8);
+    }
+    s += subseqScore(drama.intro || '', q) * 0.3;
+    for (var k = 0; k < (drama.tags || []).length; k++) {
+      s = Math.max(s, subseqScore(drama.tags[k], q) * 0.3);
+    }
+    return s;
+  }
+
+  // ===== 状态 =====
+  var state = {
+    data: null,
+    dramas: [],
+    aliasMap: {},        // 别名文本 -> 标准剧名集合（供别名池反查）
+    fuse: null,
+    useFuse: false,
+    query: '',
+    platform: '__all__',
+    platforms: [],
+  };
+
+  var $ = function (id) { return document.getElementById(id); };
+
+  // ===== 数据加载（三级：内联 -> fetch -> 文件选择） =====
+  function normalizePayload(payload) {
+    if (!payload || !Array.isArray(payload.dramas)) throw new Error('索引格式不正确：缺少 dramas 数组');
+    var dramas = payload.dramas.map(function (d) {
+      return {
+        id: d.id || '',
+        standard_title: d.standard_title || '',
+        aliases: d.aliases || [],
+        record_no: d.record_no || null,
+        actors: d.actors || [],
+        tags: d.tags || [],
+        is_ai_drama: !!d.is_ai_drama,
+        cover_url: d.cover_url || null,
+        intro: d.intro || '',
+        platform_links: (d.platform_links || []).filter(function (l) { return l && l.h5_url; }),
+        updated_at: d.updated_at || '',
+      };
+    });
+    // 别名池反查：错别字别名纠正后也能命中标准剧名
+    var aliasMap = {};
+    (payload.aliases || []).forEach(function (a) {
+      var key = norm(a.text);
+      if (!key) return;
+      (aliasMap[key] = aliasMap[key] || {})[a.standard_title] = true;
+    });
+    return { meta: payload.meta || {}, dramas: dramas, aliasMap: aliasMap, platforms: payload.platforms || [] };
+  }
+
+  function showFilePicker(msg) {
+    $('results').innerHTML =
+      '<div class="empty"><div class="big">📂</div><div style="margin-bottom:10px">' +
+      (msg || '浏览器在本地文件模式下无法自动读取索引，请手动选择 drama_index.json。') +
+      '</div><input type="file" id="fileInput" accept=".json,application/json"></div>';
+    $('fileInput').addEventListener('change', function (e) {
+      var f = e.target.files[0];
+      if (!f) return;
+      var reader = new FileReader();
+      reader.onload = function (ev) {
+        try { init(normalizePayload(JSON.parse(ev.target.result))); }
+        catch (err) { showFilePicker('文件解析失败：' + err.message); }
+      };
+      reader.readAsText(f);
+    });
+  }
+
+  function loadData() {
+    // 1) 构建脚本内联的数据（自包含 search.html）
+    var inline = window.__EMBEDDED_INDEX__;
+    if (inline) {
+      try { return Promise.resolve(normalizePayload(inline)); }
+      catch (err) { console.warn('内联数据解析失败', err); }
+    }
+    // 2) 同目录 fetch（静态托管场景）
+    if (location.protocol !== 'file:') {
+      return fetch('./drama_index.json', { cache: 'no-store' })
+        .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(normalizePayload)
+        .catch(function () { showFilePicker('未能自动加载 drama_index.json，请手动选择：'); return null; });
+    }
+    // 3) file:// 协议降级
+    showFilePicker();
+    return Promise.resolve(null);
+  }
+
+  // ===== 初始化 =====
+  function init(payload) {
+    if (!payload) return;
+    state.data = payload;
+    state.dramas = payload.dramas;
+    state.aliasMap = payload.aliasMap;
+    state.platforms = collectPlatforms(payload.dramas);
+    initSearch();
+    renderSite();
+    renderBanners();
+    renderFilters();
+    renderMeta();
+    render();
+  }
+
+  function collectPlatforms(dramas) {
+    var set = {};
+    dramas.forEach(function (d) {
+      d.platform_links.forEach(function (l) { if (l.platform) set[l.platform] = true; });
+    });
+    return Object.keys(set).sort();
+  }
+
+  function initSearch() {
+    if (typeof window.Fuse === 'function') {
+      try {
+        state.fuse = new window.Fuse(state.dramas, {
+          keys: [
+            { name: 'aliases', weight: 2.0 },
+            { name: 'standard_title', weight: 1.5 },
+            { name: 'actors', weight: 0.8 },
+            { name: 'intro', weight: 0.3 },
+          ],
+          threshold: 0.42,
+          ignoreLocation: true,
+          includeScore: true,
+          minMatchCharLength: 1,
+        });
+        state.useFuse = true;
+        return;
+      } catch (e) { console.warn('Fuse.js 初始化失败，使用内置搜索', e); }
+    }
+    state.useFuse = false; // 内置降级
+  }
+
+  // ===== 渲染 =====
+  function renderBanners() {
+    var meta = state.data.meta || {};
+    var html = '';
+    if (meta.is_sample) {
+      html += '<div class="banner banner-warn">⚠️ 当前为<strong>演示数据</strong>：链接均为占位地址且未检测（valid=null），不可用于真实跳转。真实数据请用 <code>python3 crawl_hongguo.py</code> 生成。</div>';
+    }
+    if (meta.link_valid_note && !meta.is_sample) {
+      html += '<div class="banner banner-info">' + esc(meta.link_valid_note) + '</div>';
+    }
+    $('banners').innerHTML = html;
+  }
+
+  function renderFilters() {
+    var html = '<div class="chip' + (state.platform === '__all__' ? ' active' : '') + '" data-plat="__all__">全部平台</div>';
+    state.platforms.forEach(function (p) {
+      html += '<div class="chip' + (state.platform === p ? ' active' : '') + '" data-plat="' + escAttr(p) + '">' + esc(p) + '</div>';
+    });
+    $('filters').innerHTML = html;
+    Array.prototype.forEach.call($('filters').children, function (chip) {
+      chip.addEventListener('click', function () { state.platform = chip.dataset.plat; renderFilters(); render(); });
+    });
+  }
+
+  function renderMeta() {
+    var meta = state.data.meta || {};
+    $('metaInfo').textContent = '共 ' + state.dramas.length + ' 部剧目 · ' + ((meta.normalize && meta.normalize.alias_count) || '—') + ' 个别名 · 检索引擎 ' + (state.useFuse ? 'Fuse.js' : '内置');
+    $('footerCount').textContent = state.dramas.length + ' 部剧目';
+    $('genTime').textContent = meta.generated_at || '—';
+  }
+
+  function renderSite() {
+    // 优先级：索引文件里的站点配置（Cloudflare 托管版 index.html fetch drama_index.json 拿到）
+    // > 页面内联配置（build_frontend 生成的自包含 search.html 用）。
+    var metaSite = (state.data && state.data.meta && state.data.meta.site) || null;
+    var cfg = metaSite || (typeof __SITE_CONFIG__ !== 'undefined' ? __SITE_CONFIG__ : null) || window.__SITE_CONFIG__ || {};
+    var links = cfg.links || {};
+    if ($('footDesc')) $('footDesc').innerHTML = '本站为<strong>' + esc(cfg.site_name || '短剧别名检索') + '</strong>，仅收录剧目元信息与官方跳转链接，不存储、不提供任何音视频播放。版权归对应平台所有。';
+    if ($('footEmail')) {
+      var mail = cfg.complaint_email || '';
+      $('footEmail').textContent = mail;
+      $('footEmail').href = 'mailto:' + mail;
+    }
+    if ($('footLegal')) {
+      var icp = cfg.icp_no || '';
+      var needFill = /NEED_FILL/.test(icp);
+      $('footLegal').innerHTML =
+        (needFill ? '⚠️ 备案号未填写，上线前请编辑 site.json — ' : '') +
+        (needFill ? esc(icp) : '<a href="' + escAttr(cfg.icp_link || '#') + '" target="_blank" rel="noopener">' + esc(icp) + '</a>') +
+        ' · <a href="' + escAttr(links.privacy || 'privacy.html') + '">隐私政策</a>' +
+        ' · <a href="' + escAttr(links.copyright || 'privacy.html#copyright') + '">版权声明</a>' +
+        ' · <a href="' + escAttr(links.takedown || 'privacy.html#takedown') + '">侵权处理</a>';
+    }
+  }
+
+  function doSearch(q) {
+    if (!q) return state.dramas.map(function (d) { return { item: d, score: 0 }; });
+    var qn = norm(q);
+    if (state.useFuse) {
+      return state.fuse.search(q).map(function (r) { return { item: r.item, score: 1 - (r.score || 0) }; });
+    }
+    // 内置搜索：同时支持别名池反查（错别字 -> 标准剧名）
+    var aliasTargets = {};
+    Object.keys(state.aliasMap).forEach(function (k) {
+      if (k.indexOf(qn) >= 0 || subseqScore(k, qn) > 20) {
+        Object.keys(state.aliasMap[k]).forEach(function (t) { aliasTargets[t] = true; });
+      }
+    });
+    return state.dramas.map(function (d) {
+      var s = fallbackScore(d, qn);
+      if (aliasTargets[d.standard_title]) s += 90;
+      return { item: d, score: s };
+    }).filter(function (r) { return r.score > 0; })
+      .sort(function (a, b) { return b.score - a.score; });
+  }
+
+  function render() {
+    var results = doSearch(state.query);
+    if (state.platform !== '__all__') {
+      results = results.filter(function (r) {
+        return r.item.platform_links.some(function (l) { return l.platform === state.platform; });
+      });
+    }
+    if (!results.length) {
+      $('results').innerHTML = '<div class="empty"><div class="big">🔍</div><div>' +
+        (state.query ? '没有找到「' + esc(state.query) + '」相关的剧目，换个别名或关键词试试' : '暂无剧目数据') + '</div></div>';
+      return;
+    }
+    var html = results.map(function (r) { return cardHtml(r.item); }).join('');
+    $('results').innerHTML = html;
+    bindCardEvents();
+  }
+
+  function coverHtml(d) {
+    if (d.cover_url && /^https?:\/\//.test(d.cover_url)) {
+      return '<img class="cover" src="' + escAttr(d.cover_url) + '" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">' +
+             '<div class="cover-fallback" style="display:none">' + esc((d.standard_title || '剧')[0]) + '</div>';
+    }
+    return '<div class="cover-fallback">' + esc((d.standard_title || '剧')[0]) + '</div>';
+  }
+
+  function cardHtml(d) {
+    var html = '<article class="card"><div class="card-head">' + coverHtml(d) + '<div class="card-main">';
+    html += '<div class="title-row"><span class="title">' + esc(d.standard_title) + '</span>';
+    if (d.is_ai_drama) html += '<span class="ai-badge">AI短剧</span>';
+    if (d.record_no) html += '<span class="record-no">备案 ' + esc(d.record_no) + '</span>';
+    html += '</div>';
+    if (d.intro) html += '<div class="intro" title="' + escAttr(d.intro) + '">' + esc(d.intro) + '</div>';
+    if (d.aliases.length) {
+      html += '<div class="aliases">' + d.aliases.map(function (a) {
+        var type = (state.data.aliasMap[norm(a)] ? '' : '');
+        return '<span class="alias' + type + '">' + esc(a) + '</span>';
+      }).join('') + '</div>';
+    }
+    if (d.tags.length) {
+      html += '<div class="tags">' + d.tags.map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') + '</div>';
+    }
+    html += '</div></div><div class="card-foot">';
+    if (d.actors.length) html += '<span class="actors">主演：' + esc(d.actors.join(' / ')) + '</span>';
+
+    var usable = d.platform_links.filter(function (l) { return l.valid === true && /^https?:\/\//.test(l.h5_url); });
+    if (usable.length) {
+      usable.forEach(function (l) {
+        html += '<button class="btn btn-primary" data-url="' + escAttr(l.h5_url) + '" data-scheme="' + escAttr(l.scheme || '') + '">' +
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>' +
+          esc(l.platform) + '</button>';
+      });
+    } else {
+      html += '<span class="no-link">暂无可用跳转链接</span>';
+    }
+    html += '</div></article>';
+    return html;
+  }
+
+  function bindCardEvents() {
+    Array.prototype.forEach.call(document.querySelectorAll('.btn[data-url]'), function (btn) {
+      btn.addEventListener('click', function () { openLink(btn.dataset.url, btn.dataset.scheme); });
+    });
+  }
+
+  // ===== 跳转：移动端优先 Scheme，超时降级 H5，保留显式按钮兜底 =====
+  function openLink(h5, scheme) {
+    var isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+    if (!isMobile || !scheme) { window.open(h5, '_blank', 'noopener'); return; }
+    var start = Date.now();
+    var hidden = false;
+    var onVis = function () { if (document.hidden) hidden = true; };
+    document.addEventListener('visibilitychange', onVis);
+    try {
+      var iframe = document.createElement('iframe');
+      iframe.style.display = 'none';
+      iframe.src = scheme;
+      document.body.appendChild(iframe);
+      setTimeout(function () { if (iframe.parentNode) iframe.parentNode.removeChild(iframe); }, 3000);
+    } catch (e) { /* 唤起失败走超时降级 */ }
+    setTimeout(function () {
+      document.removeEventListener('visibilitychange', onVis);
+      if (!hidden && document.visibilityState === 'visible' && Date.now() - start < 2500) {
+        window.open(h5, '_blank', 'noopener');
+      }
+    }, 1800);
+  }
+
+  // ===== 工具 =====
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]; }); }
+  function escAttr(s) { return esc(s); }
+
+  // ===== 事件 =====
+  var debounce;
+  $('q').addEventListener('input', function (e) {
+    state.query = e.target.value;
+    $('clear').style.display = state.query ? 'block' : 'none';
+    clearTimeout(debounce);
+    debounce = setTimeout(render, 120);
+  });
+  $('clear').addEventListener('click', function () { $('q').value = ''; state.query = ''; $('clear').style.display = 'none'; render(); $('q').focus(); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === '/' && document.activeElement !== $('q')) { e.preventDefault(); $('q').focus(); }
+    if (e.key === 'Escape' && document.activeElement === $('q')) { $('clear').click(); }
+  });
+
+  // ===== 启动 =====
+  loadData().then(function (payload) {
+    if (payload) init(payload);
+    // Fuse.js CDN 为增强，异步加载；加载完成后重建索引并刷新
+    var s = document.createElement('script');
+    s.src = 'https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js';
+    s.onload = function () { if (state.data && !state.useFuse) { initSearch(); renderMeta(); render(); } };
+    document.head.appendChild(s);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "_note": "站点合规与展示配置。上线前必须填写带 NEED_FILL 标记的字段，然后运行 python3 build_site.py 重新生成页面。",
+  "site_name": "短剧搜索",
+  "site_tagline": "找不到剧名？用短剧搜",
+  "complaint_email": "xclikee@163.com",
+  "icp_no": "NEED_FILL：ICP备案号",
+  "icp_link": "https://beian.miit.gov.cn/",
+  "copyright": "本站为短剧信息导航索引站，仅收录公开剧目元信息与官方跳转链接，不存储、不提供任何音视频播放。所有剧目版权归对应平台所有。",
+  "privacy_summary": "本站为纯静态页面，不采集、不存储任何用户个人信息，不使用 Cookie 与第三方统计（Fuse.js 检索在本地浏览器完成）。平台跳转链接由对应平台提供，点击后适用该平台的隐私政策。",
+  "takedown_policy": "如您认为本站收录内容侵犯您的合法权益，请通过上述投诉邮箱提交书面通知（含权属证明、涉事剧目与具体链接）。我们收到并核实后，将在构建脚本黑名单中移除对应条目并触发增量构建，通常 24 小时内生效。",
+  "links": {
+    "privacy": "privacy.html",
+    "copyright": "privacy.html#copyright",
+    "takedown": "privacy.html#takedown"
+  }
+}

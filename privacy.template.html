@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隐私政策与版权声明 - __SITE_NAME__</title>
+<style>
+  :root { --bg:#0d1117; --card:#161b22; --border:#30363d; --text:#e6edf3; --dim:#9198a1; --accent:#58a6ff; --warn:#d29922; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--text); line-height:1.8; }
+  .wrap { max-width:760px; margin:0 auto; padding:40px 20px 60px; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  h1 { font-size:26px; margin-bottom:6px; }
+  .back { font-size:14px; margin-bottom:28px; display:inline-block; }
+  h2 { font-size:19px; margin:32px 0 12px; padding-left:11px; border-left:3px solid var(--accent); }
+  p, li { color:var(--dim); font-size:14.5px; margin-bottom:10px; }
+  ul { padding-left:22px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:22px 26px; }
+  .notice { background:rgba(210,153,34,.1); border:1px solid rgba(210,153,34,.3); color:var(--warn); border-radius:8px; padding:12px 16px; font-size:13.5px; margin-bottom:22px; }
+  .meta { color:#6e7681; font-size:12.5px; margin-top:30px; border-top:1px solid var(--border); padding-top:16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← 返回搜索</a>
+  <h1>隐私政策 · 版权声明 · 侵权处理</h1>
+  <div class="notice" id="notice">⚠️ 本站配置尚未填写完整（备案号 / 投诉邮箱），上线前请编辑 site.json 并重新构建。</div>
+  <div class="card">
+    <h2>一、站点定位</h2>
+    <p id="copyrightText"></p>
+
+    <h2 id="copyright">二、版权声明</h2>
+    <p>本站内容来自各短剧平台公开的剧目元信息（剧名、简介、封面、集数）。所有剧目作品的著作权、邻接权及相关权益归对应版权方所有。本站仅提供信息索引与跳转导航，不存储、不复制、不提供任何音视频文件的播放或下载。</p>
+    <p>剧目封面图片仅作信息展示之用，版权归原权利人所有；如权利方不希望其作品封面被展示，请按下方方式联系我们，我们将及时移除。</p>
+
+    <h2>三、隐私政策</h2>
+    <p id="privacyText"></p>
+
+    <h2 id="takedown">四、侵权投诉与移除机制</h2>
+    <p id="takedownText"></p>
+    <p>投诉邮箱：<a id="complaintEmail" href="#"></a></p>
+
+    <h2>五、备案信息</h2>
+    <p id="icpText"></p>
+
+    <div class="meta" id="metaLine"></div>
+  </div>
+</div>
+<script>
+var __SITE_CONFIG__ = __SITE_CONFIG_PLACEHOLDER__;
+(function () {
+  var c = (typeof __SITE_CONFIG__ !== 'undefined' && __SITE_CONFIG__.site_name) ? __SITE_CONFIG__ : (window.__SITE_CONFIG__ || {});
+  function setText(id, v) { var el = document.getElementById(id); if (el) el.textContent = v || ''; }
+  setText('copyrightText', c.copyright);
+  setText('privacyText', c.privacy_summary);
+  setText('takedownText', c.takedown_policy);
+  var needFill = /NEED_FILL/.test((c.icp_no || '') + (c.complaint_email || ''));
+  var notice = document.getElementById('notice');
+  if (!needFill && notice) notice.style.display = 'none';
+  var em = document.getElementById('complaintEmail');
+  if (em) { em.textContent = c.complaint_email || ''; em.href = 'mailto:' + (c.complaint_email || ''); }
+  var icp = document.getElementById('icpText');
+  if (icp) {
+    if (/NEED_FILL/.test(c.icp_no || '')) icp.textContent = c.icp_no || '未填写';
+    else { icp.textContent = '备案号：' + (c.icp_no || '') + '  '; var a = document.createElement('a'); a.href = c.icp_link || '#'; a.target = '_blank'; a.textContent = '（工信部查询）'; icp.appendChild(a); }
+  }
+  setText('metaLine', '本站为纯静态页面 · 检索在浏览器本地完成 · 最后更新：' + (new Date().toISOString().slice(0,10)));
+  document.title = '隐私政策与版权声明 - ' + (c.site_name || '短剧别名检索');
+})();
+</script>
+</body>
+</html>

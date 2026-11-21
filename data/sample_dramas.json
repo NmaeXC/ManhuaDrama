@@ -1,0 +1,175 @@
+[
+  {
+    "source": "sample_rank_a",
+    "source_url": "https://example.com/rank/hot/1",
+    "standard_title": "《重生之都市仙尊》（全集大结局）",
+    "aliases": ["重身之都市仙尊", "都市仙尊", "一口气看完重生之都市仙尊", "仙尊归来"],
+    "record_no": "备案001",
+    "actors": ["张三", "李四"],
+    "tags": ["AI短剧", "逆袭", "都市"],
+    "is_ai_drama": true,
+    "cover_url": "https://example.com/cover/dr_10001.jpg",
+    "intro": "仙尊重生都市，一路逆袭打脸。",
+    "platform_links": [
+      { "platform": "红果短剧", "scheme": null, "h5_url": "https://example.com/hongguo/10001", "valid": null },
+      { "platform": "番茄短剧", "scheme": null, "h5_url": "https://example.com/fanqie/10001", "valid": null }
+    ]
+  },
+  {
+    "source": "sample_rank_b",
+    "source_url": "https://example.com/rank/hot/2",
+    "standard_title": "重生之都市仙尊",
+    "aliases": ["都市仙尊", "仙尊"],
+    "record_no": "备案001",
+    "actors": ["张三", "王五"],
+    "tags": ["都市", "爽剧"],
+    "is_ai_drama": true,
+    "intro": "同一备案号的第二条来源，用于验证合并去重。",
+    "platform_links": [
+      { "platform": "红果短剧", "scheme": null, "h5_url": "https://example.com/hongguo/10001", "valid": null },
+      { "platform": "河马短剧", "scheme": null, "h5_url": "https://example.com/hema/10001", "valid": null }
+    ]
+  },
+  {
+    "source": "sample_rank_a",
+    "source_url": "https://example.com/rank/hot/3",
+    "standard_title": "豪们赘婿（全集）",
+    "aliases": ["豪门赘婿", "赘婿", "一口气看完豪门赘婿", "上门女婿"],
+    "record_no": "备案002",
+    "actors": ["赵六", "钱七"],
+    "tags": ["AI短剧", "甜宠", "逆袭"],
+    "is_ai_drama": true,
+    "cover_url": "https://example.com/cover/dr_10002.jpg",
+    "intro": "赘婿身份曝光，惊艳全场。",
+    "platform_links": [
+      { "platform": "红果短剧", "scheme": null, "h5_url": "https://example.com/hongguo/10002", "valid": null },
+      { "platform": "番茄短剧", "scheme": null, "h5_url": "https://example.com/fanqie/10002", "valid": null }
+    ]
+  },
+  {
+    "source": "sample_rank_b",
+    "source_url": "https://example.com/rank/hot/4",
+    "standard_title": "穿越古代当王爷",
+    "aliases": ["王爷穿越古代", "古代王爷", "穿越王爷"],
+    "record_no": "",
+    "actors": ["孙八"],
+    "tags": ["穿越", "古装"],
+    "is_ai_drama": false,
+    "intro": "现代人穿越成古代王爷。",
+    "platform_links": [
+      { "platform": "河马短剧", "scheme": null, "h5_url": "https://example.com/hema/10003", "valid": null }
+    ]
+  },
+  {
+    "source": "sample_rank_a",
+    "source_url": "https://example.com/rank/hot/5",
+    "standard_title": "王爷穿越古代",
+    "aliases": ["穿越王爷", "王爷古代"],
+    "record_no": "",
+    "actors": ["孙八", "周九"],
+    "tags": ["古装"],
+    "is_ai_drama": false,
+    "intro": "同一剧情的另一来源标题，由人工确认后合并。",
+    "platform_links": [
+      { "platform": "红果短剧", "scheme": null, "h5_url": "https://example.com/hongguo/10003", "valid": null }
+    ]
+  },
+  {
+    "source": "sample_rank_b",
+    "source_url": "https://example.com/rank/hot/6",
+    "standard_title": "穿越古代当王爷（换皮版）",
+    "aliases": ["换皮王爷"],
+    "record_no": "",
+    "actors": ["吴十"],
+    "tags": ["穿越", "换皮"],
+    "is_ai_drama": true,
+    "intro": "无备案号的换皮剧，按策略应独立记录、不强行合并。",
+    "platform_links": [
+      { "platform": "番茄短剧", "scheme": null, "h5_url": "https://example.com/fanqie/10004", "valid": null }
+    ]
+  },
+  {
+    "source": "sample_rank_a",
+    "source_url": "https://example.com/rank/hot/7",
+    "standard_title": "广电通报下架剧",
+    "aliases": ["下架剧"],
+    "record_no": "备案999",
+    "actors": ["测试"],
+    "tags": ["违规"],
+    "is_ai_drama": false,
+    "intro": "黑名单剧目，构建时应被过滤。",
+    "platform_links": []
+  },
+  {
+    "source": "sample_rank_b",
+    "source_url": "https://example.com/rank/hot/8",
+    "standard_title": "末日重生之我囤货了",
+    "aliases": ["末日囤货", "重生囤货", "一口气看完末日囤货"],
+    "record_no": "备案003",
+    "actors": ["郑十一", "冯十二"],
+    "tags": ["AI短剧", "末日", "重生"],
+    "is_ai_drama": true,
+    "cover_url": "https://example.com/cover/dr_10005.jpg",
+    "intro": "重生末日前，疯狂囤货。",
+    "platform_links": [
+      { "platform": "番茄短剧", "scheme": null, "h5_url": "https://example.com/fanqie/10005", "valid": null },
+      { "platform": "河马短剧", "scheme": null, "h5_url": "https://example.com/hema/10005", "valid": null }
+    ]
+  },
+  {
+    "source": "sample_rank_a",
+    "source_url": "https://example.com/rank/hot/9",
+    "standard_title": "豪们千金归来",
+    "aliases": ["千金归来", "豪门千金", "千金归來"],
+    "record_no": "备案004",
+    "actors": ["陈十三"],
+    "tags": ["都市", "复仇"],
+    "is_ai_drama": false,
+    "intro": "千金归来，重掌家族。",
+    "platform_links": [
+      { "platform": "红果短剧", "scheme": null, "h5_url": "https://example.com/hongguo/10006", "valid": null }
+    ]
+  },
+  {
+    "source": "sample_rank_b",
+    "source_url": "https://example.com/rank/hot/10",
+    "standard_title": "ＡＩ短剧：赘婿逆袭【完整版】",
+    "aliases": ["赘婿逆袭", "AI赘婿"],
+    "record_no": "备案005",
+    "actors": ["褚十四", "卫十五"],
+    "tags": ["AI短剧", "逆袭"],
+    "is_ai_drama": true,
+    "intro": "全角字符与营销后缀清洗验证用例。",
+    "platform_links": [
+      { "platform": "红果短剧", "scheme": null, "h5_url": "https://example.com/hongguo/10007", "valid": null }
+    ]
+  },
+  {
+    "source": "sample_rank_a",
+    "source_url": "https://example.com/rank/hot/11",
+    "standard_title": "三生三世之仙恋",
+    "aliases": ["仙恋", "三生仙恋", "三生三世仙恋"],
+    "record_no": "备案006",
+    "actors": ["蒋十六"],
+    "tags": ["仙侠", "爱情"],
+    "is_ai_drama": false,
+    "intro": "三世情缘，仙凡之恋。",
+    "platform_links": [
+      { "platform": "河马短剧", "scheme": null, "h5_url": "https://example.com/hema/10008", "valid": null }
+    ]
+  },
+  {
+    "source": "sample_rank_b",
+    "source_url": "https://example.com/rank/hot/12",
+    "standard_title": "无双战神",
+    "aliases": ["战神", "无双", "战神归来"],
+    "record_no": "",
+    "actors": ["沈十七"],
+    "tags": ["战神", "热血"],
+    "is_ai_drama": true,
+    "intro": "无备案号独立剧目，不应与其他条目合并。",
+    "platform_links": [
+      { "platform": "红果短剧", "scheme": null, "h5_url": "https://example.com/hongguo/10009", "valid": null }
+    ]
+  }
+]

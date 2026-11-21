@@ -1,0 +1,27 @@
+# Python 缓存 / 虚拟环境
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 日志（运行时生成，不入库）
+log/*.log
+
+# 历史备份与临时文件
+data/backup/
+*.tmp
+*.bak
+.DS_Store
+
+# 本地工具数据
+.workbuddy/
+
+# 说明：
+# 以下产物需要入库供 Cloudflare Pages 部署，请勿忽略：
+#   dist/                 静态站点产物（Cloudflare 输出目录）
+#   index.html            模板
+#   drama_index.json      主索引（Cloudflare 首页 fetch 它）
+#   privacy.html          合规页
+#   search.html           自包含单文件版
+#   data/raw_pool.json    累计池（可选，便于跨机恢复）

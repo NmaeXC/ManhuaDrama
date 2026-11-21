@@ -1,0 +1,17 @@
+[Unit]
+Description=短剧索引定时更新（累计抓取 + 静态发布）
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+# 按真实部署路径替换 /opt/drama-search
+WorkingDirectory=/opt/drama-search
+ExecStart=/opt/drama-search/scripts/cron_update.sh
+# 抓取限速 1-2 分钟，留足超时余量
+TimeoutStartSec=600
+# 可选：不联网、仅从累计池重建
+# Environment=DRAMA_EXTRA_ARGS=--offline
+# 可选：成功后 git 推送
+# Environment=DRAMA_GIT_PUSH=1
+# Environment=DRAMA_GIT_BRANCH=main

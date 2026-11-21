@@ -1,0 +1,14 @@
+[Unit]
+Description=每天凌晨 2:10 定时更新短剧索引
+
+[Timer]
+# 按真实部署路径替换 /opt/drama-search 对应的 service
+Unit=drama-update.service
+OnCalendar=*-*-* 02:10:00
+# 若服务器开机时已过点（如重启），补跑一次
+Persistent=true
+# 随机延迟 0-120 秒，避免多机同刻拥塞目标站
+RandomizedDelaySec=120
+
+[Install]
+WantedBy=timers.target
