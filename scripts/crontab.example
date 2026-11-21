@@ -12,12 +12,12 @@
 SHELL=/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
-# 每天凌晨 2:10 更新一次（避开抓取目标站高峰；单次约 1-2 分钟）
-10 2 * * * /opt/drama-search/scripts/cron_update.sh >> /opt/drama-search/log/crontab_stdout.log 2>&1
+# 每 6 小时更新一次（00:10 / 06:10 / 12:10 / 18:10；配合每次 50 条轮换抓取）
+10 0,6,12,18 * * * /opt/drama-search/scripts/cron_update.sh >> /opt/drama-search/log/crontab_stdout.log 2>&1
 
 # —— 可选变体：按需取消注释其中一行，并注释掉上面那行 ——
-# 每 6 小时更新一次：
-# 10 */6 * * * /opt/drama-search/scripts/cron_update.sh >> /opt/drama-search/log/crontab_stdout.log 2>&1
+# 每天凌晨 2:10 更新一次：
+# 10 2 * * * /opt/drama-search/scripts/cron_update.sh >> /opt/drama-search/log/crontab_stdout.log 2>&1
 #
 # 不联网、仅从累计池重建（适合网络受限服务器，数据不会新增）：
 # 10 2 * * * DRAMA_EXTRA_ARGS="--offline" /opt/drama-search/scripts/cron_update.sh >> /opt/drama-search/log/crontab_stdout.log 2>&1

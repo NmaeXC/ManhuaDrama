@@ -91,8 +91,17 @@ def load_sources(path: Path) -> list[SourceConfig]:
     return sources
 
 
-def discover_urls(config: Config, source: SourceConfig, fetch_text: FetchText) -> list[str]:
-    """根据 entry 类型发现详情页 URL 列表（保序去重）。"""
+def discover_urls(
+    config: Config,
+    source: SourceConfig,
+    fetch_text: FetchText,
+    exclude: set[str] | None = None,
+) -> list[str]:
+    """根据 entry 类型发现详情页 URL 列表（保序去重）。
+
+    exclude 为累计池中已抓过的 source_url 集合：命中则跳过，从而在 limit
+    额度内优先发现新剧目，实现跨轮次轮换（否则每次都取 sitemap 前 limit 个）。
+    """
     if source.entry == "api":
         return [source.home_url] if source.home_url else []
 
@@ -128,12 +137,16 @@ def discover_urls(config: Config, source: SourceConfig, fetch_text: FetchText) -
         logger.warning("未知 entry=%s（source=%s）", source.entry, source.id)
         return []
 
+    exclude = exclude or set()
     result: list[str] = []
     seen: set[str] = set()
     for url in urls:
+        url = url.strip()
         if url in seen:
             continue
         seen.add(url)
+        if url in exclude:
+            continue
         result.append(url)
         if len(result) >= source.limit:
             break

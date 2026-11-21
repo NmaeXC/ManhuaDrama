@@ -79,15 +79,25 @@ def run(
         )
 
     # 1) 逐平台发现 URL → 抓取 → 累计入池
+    # 先取已抓 URL 快照（按来源分组），供 discover_urls 跳过、实现轮换取新。
+    seen_by_source: dict[str, set[str]] = {}
+    for item in pool.load():
+        if item.source_url:
+            seen_by_source.setdefault(item.source, set()).add(item.source_url.strip())
     if not offline:
         for src in sources:
             eff_limit = limit if limit is not None else src.limit
             src_cfg = src if eff_limit == src.limit else type(src)(**{**src.__dict__, "limit": eff_limit})
             if verbose:
                 print(f"[source] {src.name}（{src.id}）发现详情页…")
-            urls = discover_urls(config, src_cfg, lambda u: fetch_text(u, config))
+            exclude = seen_by_source.get(src.id, set())
+            urls = discover_urls(config, src_cfg, lambda u: fetch_text(u, config), exclude=exclude)
             if verbose:
-                print(f"         取到 {len(urls)} 个详情页 URL，开始抓取（限速）…")
+                new_cnt = sum(1 for u in urls if u not in exclude)
+                print(
+                    f"         取到 {len(urls)} 个详情页 URL（其中新 {new_cnt} / 已抓跳过）"
+                    f"，开始抓取（限速）…"
+                )
             if not urls:
                 continue
             collector = PlatformSource(config, src_cfg, urls)
