@@ -132,10 +132,11 @@ def export_index(
             logger.info("已备份旧索引：%s", backup_path)
 
     payload = build_payload(result, crawl_stats, config)
-    config.output_path.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    if config.compact_output:
+        text = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+    else:
+        text = json.dumps(payload, ensure_ascii=False, indent=2)
+    config.output_path.write_text(text, encoding="utf-8")
 
     logger.info(
         "索引导出完成：%s（%d 条剧目，%d 个别名，引擎 %s）",

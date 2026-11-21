@@ -107,9 +107,11 @@ def main(argv: list[str] | None = None) -> int:
     if not isinstance(index_payload, dict):
         raise RuntimeError("数据文件格式不正确，无法写入站点配置")
     index_payload.setdefault("meta", {})["site"] = site
-    index_path.write_text(
-        json.dumps(index_payload, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+    if config.compact_output:
+        index_text = json.dumps(index_payload, ensure_ascii=False, separators=(",", ":"))
+    else:
+        index_text = json.dumps(index_payload, ensure_ascii=False, indent=2)
+    index_path.write_text(index_text, encoding="utf-8")
 
     # 2) 搜索页
     info = build(ROOT / "index.html", data_file, ROOT / "search.html", site)

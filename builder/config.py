@@ -53,6 +53,7 @@ class Config:
     # ---------- 容量与切换阈值（README 第六节） ----------
     minisearch_threshold: int = 5000
     max_records: int = 10000
+    compact_output: bool = True                         # 索引 JSON 紧凑输出（去缩进空白，体积 -19%）
 
     # ---------- 合并策略（README 第三节 / 风险 2） ----------
     merge_similarity_threshold: float = 0.85           # 高置信度阈值

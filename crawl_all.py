@@ -137,7 +137,12 @@ def run(
     }
 
     out = output or ROOT / "hongguo_crawl.json"
-    out.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    payload_text = (
+        json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+        if config.compact_output
+        else json.dumps(payload, ensure_ascii=False, indent=2)
+    )
+    out.write_text(payload_text, encoding="utf-8")
     if verbose:
         print(f"[export] 输出 {out.name}：{len(result.records)} 剧目 / {len(result.alias_pool)} 别名")
     return payload
