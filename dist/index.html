@@ -416,9 +416,6 @@ var __SITE_CONFIG__ = {
     if (meta.is_sample) {
       html += '<div class="banner banner-warn">⚠️ 当前为<strong>演示数据</strong>：链接均为占位地址且未检测（valid=null），不可用于真实跳转。真实数据请用 <code>python3 crawl_hongguo.py</code> 生成。</div>';
     }
-    if (meta.link_valid_note && !meta.is_sample) {
-      html += '<div class="banner banner-info">' + esc(meta.link_valid_note) + '</div>';
-    }
     $('banners').innerHTML = html;
   }
 

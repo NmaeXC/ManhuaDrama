@@ -1,12 +1,11 @@
 {
   "meta": {
     "version": "0.1.0",
-    "generated_at": "2026-11-21T22:03:22",
+    "generated_at": "2026-11-21T22:16:39",
     "total": 230,
     "search_engine": "fuse",
     "minisearch_threshold": 5000,
     "is_sample": false,
-    "link_valid_note": "valid 三态：true=实测可达 / false=实测失效 / null=未检测；前端仅展示 true。",
     "crawl": null,
     "normalize": {
       "blacklisted": 0,
@@ -64,7 +63,7 @@
     "site": {
       "_note": "站点合规与展示配置。上线前必须填写带 NEED_FILL 标记的字段，然后运行 python3 build_site.py 重新生成页面。",
       "site_name": "短剧搜索",
-      "site_tagline": "找不到剧名？用别名搜 · test 215704",
+      "site_tagline": "找不到剧名？用别名搜",
       "complaint_email": "xclikee@163.com",
       "icp_no": "NEED_FILL：ICP备案号",
       "icp_link": "https://beian.miit.gov.cn/",

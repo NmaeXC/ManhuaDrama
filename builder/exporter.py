@@ -88,11 +88,6 @@ def build_payload(
     ready_platforms = [p for p in platforms["platforms"] if p.get("status") == "active"]
     if is_sample is None:
         is_sample = bool(crawl_stats and crawl_stats.source == "sample")
-    all_sample = is_sample and all(
-        link.valid is None
-        for record in result.records
-        for link in record.platform_links
-    )
     return {
         "meta": {
             "version": __version__,
@@ -101,11 +96,6 @@ def build_payload(
             "search_engine": search_engine,
             "minisearch_threshold": config.minisearch_threshold,
             "is_sample": is_sample,
-            "link_valid_note": (
-                "演示数据：所有链接为占位地址且未检测（valid=null），不可作为真实跳转。"
-                if all_sample
-                else "valid 三态：true=实测可达 / false=实测失效 / null=未检测；前端仅展示 true。"
-            ),
             "crawl": crawl_stats.model_dump() if crawl_stats else None,
             "normalize": {
                 "blacklisted": result.blacklisted,
