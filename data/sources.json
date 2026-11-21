@@ -27,7 +27,7 @@
       "sitemap_url": "https://hongguoduanju.com/seo-important.xml",
       "detail_url_template": "https://hongguoduanju.com/detail?series_id={id}",
       "detail_id_pattern": "href=\"/detail\\?series_id=(\\d+)\"",
-      "limit": 200,
+      "limit": 500,
       "note": "域名经 ICP 备案(京ICP备2021028909号-43)核验；robots 允许 /detail，禁止 /query /series /player。入口已从首页(仅27条热播)切换为 sitemap(seo-important.xml，2000 条公开详情页)；默认 limit=200，命令行 --limit N 可覆盖(上限2000)。"
     },
     {
@@ -52,7 +52,7 @@
       "home_url": "https://www.kuaikaw.cn/",
       "detail_url_template": "https://www.kuaikaw.cn/drama/{id}",
       "detail_id_pattern": "href=\"/drama/(\\d+)\"",
-      "limit": 30,
+      "limit": 500,
       "note": "域名经实测核验为官方站：title=河马剧场官网；ICP 京ICP备17057640号-55（主体与点众快看一致）；robots Allow:/，禁止 /download /search 及带查询参数 URL；首页 63 个 /drama/{id} 公开详情页（无查询参数，合规）。详情页 __NEXT_DATA__.bookInfoVo 含主演/题材/封面/简介。"
     },
     {
