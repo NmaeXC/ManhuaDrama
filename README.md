@@ -379,3 +379,4 @@ Cloudflare Pages 建站：**Connect to Git** 选该仓库 → Build command **�
 2. 中期：增加云函数接收 UGC 别名提交，人工审核入库
 3. 中长期：接入 LLM，在构建阶段为每条剧目生成剧情向量，支持剧情描述检索
 4. 长期：数据量突破 1w 条，迁移 Meilisearch 服务端检索架构，保留原有爬虫构建逻辑
+ 
