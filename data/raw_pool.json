@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-26T12:10:57",
-  "total": 1263,
+  "updated_at": "2026-11-26T18:11:46",
+  "total": 1313,
   "items": [
     {
       "source": "hema",
@@ -33404,6 +33404,1280 @@
       ],
       "raw": {
         "episodes": 43
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704611731045092414",
+      "standard_title": "读心保姆专治戏精",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全70集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/5c91ef25412facf7154f98ca2d923b32~tplv-shrink:640:0.image",
+      "intro": "月薪五十万招保姆？王翠芬拎包就上！她有个怪本事，有钱人的心里话全能听见！谁口是心非，那点算盘全被听个精光。假千金装可怜、白月光下毒手、不孝子争家产，戏精轮番作妖，她见招拆招、句句戳心。护夫人、揭穿调换亲子鉴定的骗局，满门权贵被一个保姆治得服服帖帖。市井大婶逆袭成团宠，专治各种不服！",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704611731045092414",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 70
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704615163831274521",
+      "standard_title": "重生七零退婚当天我掀翻全场",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全127集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/96aca465e49766b86030e1c3b591237e~tplv-shrink:640:0.image",
+      "intro": "夏知知重生回到七零年代嫁入苏家的婚礼当天，识破苏春生与刘桂兰的丑事，当众闹开、坚决离婚并索赔，拿回母亲嫁妆。她救出被父亲逼迫的姐姐夏微，接连揭穿父亲，贾美娟、夏禾夏棠及赵保民父子的谎言与罪行，借药罐空间和镇武司傅令谦等人相助，扳倒苏、夏、赵几家恶人。最终，姐妹俩与夏家断亲，带着物资下乡投奔温家，开始新生活。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704615163831274521",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 127
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704615476210453566",
+      "standard_title": "重生八零之我靠焊枪封神",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全114集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/f5b97a30834c442652cef76b8e114154~tplv-shrink:640:0.image",
+      "intro": "1987年，焊工沈烈舍命救下全船，却被未婚妻逼着让出晋升名额！重活一世，他果断退婚、砸掉铁饭碗，从破铁皮棚白手起家！凭一手绝活修废泵、攻克特种焊接难题，更与敢闯敢拼的顾清澜携手创办烈澜重工。面对重重阻碍，两人坚守质量底线，勇闯深海救险，用工匠的双手焊出万吨巨轮的钢铁脊梁，也焊出势均力敌的爱情！",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704615476210453566",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 114
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704617886777625625",
+      "standard_title": "五万车位我买断整个地库",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全58集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/e02e86e65ec030b0e6a156e002ef12c1~tplv-shrink:640:0.image",
+      "intro": "锦澜花园车位售价五万，业主彭海涛带头号召集体拒买压价。单亲妈妈沈知秋因女儿哮喘、深夜回家停车困难，独自买下一个车位，随即遭到彭海涛等人围堵，占车位、扔垃圾、堵路不让送急诊。忍无可忍的沈知秋一怒之下斥资九百三十万，将小区剩余一百八十六个车位全部买断。从被排挤的叛徒到车位新主，她以自己的规则反击，用阶梯定价让逐利的邻居排起长队，也让带头闹事的彭海涛最终众叛亲离。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704617886777625625",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 58
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704619778333215768",
+      "standard_title": "父皇您别再逼我做皇帝了第四季",
+      "aliases": [
+        "父皇您别再逼我做皇帝了",
+        "父皇您别再逼我做皇帝了4"
+      ],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全200集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/36cf63d1d43ec0b0da95f3fb72763aad~tplv-shrink:640:0.image",
+      "intro": "梁国国主微服出使大夏，伪装成使团里一个不起眼的侍卫。满朝文武没人看穿，大夏靖王却一眼识破！你身后那个侍从，才是真正的国主吧？一句话掀开两国底牌。年轻国主敢孤身入敌国谈判，王叔在国内虎视眈眈等着逼宫篡位，老侯爷带着断臂和先帝御赐金鞭上朝堂震慑群臣。这盘三国棋局，远比表面上看起来的更深！更险！",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704619778333215768",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 200
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704622186102787134",
+      "standard_title": "龙城传奇是我妈",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全77集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/65fbda090578655d54e132cf0e0ca060~tplv-shrink:640:0.image",
+      "intro": "江九曾是能力出众的风云人物，在事业上升之际选择淡出众人视野，不料遭到信任之人贺山算计，母女被迫分离。贺山对外编造说辞掩盖当年真相。二十年后，女儿江念长大，身处被动为难的处境。一次偶然契机，江九得知女儿的遭遇，冲破困境重新现身。世人这才知晓，那位传闻中的强者，正是江念失散多年的母亲。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704622186102787134",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 77
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704622475950165017",
+      "standard_title": "豆之大一家装不下",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全53集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/814d64a8675b8e34a4f701dd1ae5c830~tplv-shrink:640:0.image",
+      "intro": "乡村小女孩刘豆豆一直盼望拥有一位姐姐，命运让孤苦无依的表姐盼儿来到家中，普通农家扛住生活压力，接她一同生活，一家人吵吵闹闹彼此陪伴共同成长，盼儿与哥哥石头勤学上进，豆豆走出属于自己的成长道路，面对原生父亲的贸然打扰，全家同心守护家人，没有完美小孩，人人各有光芒，演绎超越血缘的中国式亲情。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704622475950165017",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 53
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704623209043217433",
+      "standard_title": "我救了顾家他们却丢了我儿子",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全69集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/bcd4988147d7a67bb41fe364d7923986~tplv-shrink:640:0.image",
+      "intro": "顾承渊临危受命远赴海外，拼死挽救顾家集团。可家中却发生狸猫换子阴谋，妻子苏晚晴被诬陷送进精神病院，亲生儿子顾小川遭软禁。十三年后顾承渊携实力归国，抽丝剥茧查清真相。他坚守法理道义，对抗家族私心与商业对手，守护家人，维护企业正道，诠释家国大义与亲情伦理的正向价值。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704623209043217433",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 69
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704625640145685528",
+      "standard_title": "诡异婚配我老公是诡帝",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全122集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/13143d93fc226f3761e232fa7c7aac1a~tplv-shrink:640:0.image",
+      "intro": "别人诡异婚配是九死一生，云枕月婚配是来进货的。龙国校花盲选穷鬼顾渊，本是地狱开局，结果老公随手一送就是王炸，黑金卡刷遍诡店免单、房产证直接当店长、宠物猫顶级红衣护驾、熊猫玩偶煞星级别的、百万诡币能买S级副本。轮回医院她去一趟就成龙国友好副本，诡异见她绕道走。全球观众心态崩了，我们玩恐怖生存，她玩进货。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704625640145685528",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 122
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704633566021307417",
+      "standard_title": "穿越八零厂区第一辣媳第二季",
+      "aliases": [
+        "穿越八零厂区第一辣媳",
+        "穿越八零厂区第一辣媳2"
+      ],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全139集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/f9b41931f4c46f2a94f720e60bf852e6~tplv-shrink:640:0.image",
+      "intro": "农村家属姜纾蓉进厂当卫生院顾问，凭现代医学知识推行分区诊疗，晨会辩论驳倒挑刺的外科主任，啃下排污改造。丈夫任务中身负重伤，她熬鱼汤调养，领证时他伤未痊愈，工友抬担架送他去县民政办。她牵头升级医疗设备，靠检伤分类演习赢下第九厂；林婉写匿名信诬告，她将计就计引蛇出洞，让对方被开除遣返。后来她出任住房改善顾问，顶着减半预算立下军令状，带十名志愿者用废料一周建成样板间。这时丈夫老家公社寄来一封信。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704633566021307417",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 139
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704638810176359449",
+      "standard_title": "网恋太子爷掉马四个崽崽瞒不住了",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全152集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/314e7e739410fa269dddb6464f4f8da6~tplv-shrink:640:0.image",
+      "intro": "温茉一觉穿越，成了网恋卷款跑路的女配，还带着四胞胎儿子。她穿来时钱在国外花光，只能带娃回国在桥洞落脚，看着四张嗷嗷待哺的小脸，温茉决定带娃回娘家，往后的日子让娃吃饱穿暖。只是娃的亲爹裴司桀越来越不对劲了，书中他该讨厌她、追究她责任才对，可他的眼神却越来越温柔。后来温茉才明白，裴司桀早已对她情根深种，还知道了他们有四个崽的秘密。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704638810176359449",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 152
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704640215977036825",
+      "standard_title": "被抛弃的女孩有了家",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全80集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/08388559b9e9acd2257cbd66cc4252e2~tplv-shrink:640:0.image",
+      "intro": "五岁的方余父母分开后，生母林芳争夺抚养权只为抚养费。后妈张秀梅心疼方余，用心照顾陪伴他长大。方余从小勤奋好学，踏实上进，成年后靠自己努力打拼，事业小有成就，好好孝敬张秀梅，让她过上安稳富足的日子。生母林芳得知方余发展不错，找上门以亲情为由，希望方余帮扶自己的小儿子。方余看清对方想法，遵从本心做出了自己的选择。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704640215977036825",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 80
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704643308915526718",
+      "standard_title": "国运求生百岁老人勇闯禁地修仙",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全124集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/451d2b8b0bfe598141799a4b4a81d8d7~tplv-shrink:640:0.image",
+      "intro": "国运求生游戏降临蓝星，百岁老人张大成被选中送入死亡率极高的黑暗禁区，全网皆以为他必死。实则他是绑定修仙系统八十年的修士，携灵鉴术与随身空间踏入禁地，契约龙鼠、红眼兔，边修炼边探宝闯关，凭一己之力逆势拉升大夏国运。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704643308915526718",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 124
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704649492817005593",
+      "standard_title": "升官发财还单身",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全104集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/6a0774aa6df42c8962bd68e84f56b939~tplv-shrink:640:0.image",
+      "intro": "熬了三年，韩识终于等来升职调令，同一天又中了百万彩票。他想告诉妻子，却被人事告知他的婚姻状态早已是“离异”。半年前，妻子唐雯为把学区房名额让给初恋的女儿，悄悄起诉离婚，还与他领了证，只说“一年后就回来复婚”。升职、发财、单身，三件事砸在同一天。他没吵没闹，只决定把这场“假离婚”当真，重新活一次。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704649492817005593",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 104
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704663408481684505",
+      "standard_title": "送个文件婆媳俩的身份藏不住了",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全55集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/6c6e450dd80d6ec91d7e6c346c22a40a~tplv-shrink:640:0.image",
+      "intro": "顾家夫人苏婉晴与儿媳温知夏因身份保密、从未公开露面，送文件时被秘书林筱筱误认并当众羞辱。面对误解与谣言，知夏沉着冷静、依法维权，查明伪造文件、删改监控等真相，涉事人员依法受到处理。顾家父子及时澄清两位家人的真实身份，风波过后，一家四口以公开亮相与婚礼重获信任，一家人坦诚沟通、彼此守护，携手走向更美好的明天。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704663408481684505",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 55
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704671562368044056",
+      "standard_title": "小溪的逆袭第三季",
+      "aliases": [
+        "小溪的逆袭",
+        "小溪的逆袭3"
+      ],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全148集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/7ac115b6e41836f259005b3ed636d963~tplv-shrink:640:0.image",
+      "intro": "被抱错多年的李文溪回到亲生家庭，却仍面对母亲秦兰的偏心和养女李文婷的刁难。她不再执着于亲情得失，凭借勤奋与天赋深耕数学，暑假意外参演武侠剧《侠客传》，又靠家教自立，最终夺得国际数学竞赛金牌，保送清大。一路上，她与张书岚、郝三妹等好友彼此扶持，也在大学结识陈知衍、重逢韩毅。面对家庭、友情、爱情与人生选择，李文溪始终坚持自我；当她与陈知衍的未来规划渐行渐远，便选择体面告别，继续走自己的路。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704671562368044056",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 148
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704672686676380734",
+      "standard_title": "离婚当天我多了个魔王护老妈",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全60集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/b9a36eedf037707abaf127d390a6cdd0~tplv-shrink:640:0.image",
+      "intro": "苏晨自小在福利院长大，一边打多份工，一边支持伴侣求学、照料长辈，在一家公司做普通行政工作。他身体抱恙，却遭遇情感破裂，又遇上工作变动。一次偶然，他出手相助了陆晚，颈后的印记，让陆晚认出他是失散多年的亲人。亲人相认后，家人赶来照料他，帮他安排治疗与工作。面对旁人的不实揣测与构陷，家人一同出面，澄清误会，还他清白。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704672686676380734",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 60
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704675104403246104",
+      "standard_title": "重生归来狐鼠姐妹绝不认输",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全102集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/ac9e3f7e98b836139fdae3df59fced5d~tplv-shrink:640:0.image",
+      "intro": "沈知栗与沈灵汐本是沈家嫡女，却被生父当作攀附权贵的棋子，强行灌下古墓出土的兽灵蛊丹。前世姐姐入督军府遭人暗害一尸两命，妹妹被囚风月场所受尽折辱惨死暗牢。一朝重生重回祠堂服丹之日，姐妹二人默契互换蛊丹，花栗鼠体质入主督军府智斗后宅，九尾狐幻术通天搅动军政风云，双姝联手步步为营，在深宅与权势场中杀出一条血路。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704675104403246104",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 102
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704681967198948414",
+      "standard_title": "轮回日漫剧版",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全68集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/2a9496db8c8111cfb93776774a1eeea1~tplv-shrink:640:0.image",
+      "intro": "2028年8月8日，职员苏铭被诬陷谋杀，凶器指纹、水杯证物、监控全都指向他，唯一不在场人证女总裁魏冰岚拒绝出面作证，死者卢月更是几个月前就开始散播苏铭骚扰的谣言，苏铭辩解明明是对方纠缠自己，却被警方反问，她用自己的命来陷害你不成？！深夜，苏铭在牢房中辗转反侧渐渐睡去，再次醒来时，苏铭震惊的发现自己竟然回到了8月8日清晨！",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704681967198948414",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 68
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704683516834892825",
+      "standard_title": "女主不追主角却倒追我反派",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全96集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/1332088abe40fb99949ede00ae1b0c93~tplv-shrink:640:0.image",
+      "intro": "开局成为富二代，拥有美丽妻子。可徐沐却高兴不起来。只因他成了书中无脑反派，打骂妻子，欺辱妹妹，龙王归来，骨灰都要给他扬了。好在徐沐觉醒正义系统，这一世他要改变必死的结局。本短剧改编自番茄小说《女主不追主角，却倒追我反派》作者旧月",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704683516834892825",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 96
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704689831170804761",
+      "standard_title": "小丑谢幕我不接受迟来的道歉",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全53集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/496c53a8327b150d5e06ffb045824178~tplv-shrink:640:0.image",
+      "intro": "大四贫困生苏青禾在助学金评议会上遭遇男友陈故、竹马周京烁和闺蜜龚如意的集体作伪证，将名额给了伪装贫困的樊潇。聚餐被放鸽子、当众受辱后遇袭受伤，众人却只保护樊潇，苏青禾心死，收集证据自证清白，赴Y国留学。昔日四人幡然醒悟漂洋追到异国跪地求原谅，但苏青禾拒绝，专注于学业，在导师季崇君的陪伴下完成自我蜕变。背叛者承受煎熬，苏青禾走向光芒。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704689831170804761",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 53
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704707802056379416",
+      "standard_title": "八零二嫁满堂春",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全143集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/e577920f1e235eb059e850d2281b1836~tplv-shrink:640:0.image",
+      "intro": "姜黎重生回1988年，被丈夫拿假检查单诬陷“不孕”的那天。前世，她替丈夫和他的白月光养大私生子，最终伤残毁容、被扫地出门。这一世，她当众反击、提出离婚，护住亲人，拿回钱财，买院摆摊，更在满月宴上揭穿丈夫的背叛。顾家与李梦洁再设毒计，却让她与医生沈执萧意外结缘。面对他坚定的求娶，姜黎能否挣脱旧婚姻，重新选择自己的人生？",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704707802056379416",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 143
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704722406811634713",
+      "standard_title": "我堂堂东北千金",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全96集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/23921fc923e2d529cc7e529ddee17742~tplv-shrink:640:0.image",
+      "intro": "洛宁为协助父亲找出公司潜藏的内鬼，刻意伪装成家境普通的学生住进大学宿舍。她本期待真挚的友情，不料闺蜜陆清颜与齐黎得知内情后，立刻翻脸，处处排挤孤立她，还不断怂恿她参与危险应酬。洛宁不动声色，悄悄收集证据。校庆当天，洛宁当众放出录音，揭穿二人的算计，撕毁原定的留学协议。陆清颜、齐黎因触犯法律受到惩处，洛宁看透虚假情谊，在风波中慢慢成长。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704722406811634713",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 96
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704732650627419161",
+      "standard_title": "被占车位我不得不祭出天枢",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全100集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/6090843694e46bfd80836c94c3e8b858~tplv-shrink:640:0.image",
+      "intro": "华国首富沈震岳因照顾中风瘫痪的妻子林素琴隐居兰华庭。乔氏总裁乔曼恶意霸占其车位，拒绝挪车并用水泥墩和钢链封锁沈震岳座驾，致林素琴延误送医陷入昏迷。沈震岳启动“天枢”紧急信标，华岳集团全面响应恢复监控证据，乔曼与弟乔峥接连滋扰。最终揭露乔氏债务问题。乔曼姐弟被调查，乔氏倒台；沈震岳接管民生项目，林素琴逐渐康复。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704732650627419161",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 100
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704741070508133401",
+      "standard_title": "被忽视的繁星",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全65集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/3dca8692ef2517308ee1dfad32ab2712~tplv-shrink:640:0.image",
+      "intro": "沈繁星与妹妹沈昭愿同日高考，因相貌普通、成绩长期被低估，在家中受尽忽视。她考出682分成为全市理科状元，却无人问津。面对父亲、哥哥和竹马迟来的道歉与挽回，繁星心冷如铁，不再回头。她靠兼职和奖学金完成学业，一路保研直博，在科研事业与广阔天地中重获尊严。曾经那个被漠视的女孩，终于挣脱原生家庭的阴影，走向属于自己的星辰大海。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704741070508133401",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 65
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704742001933044760",
+      "standard_title": "天道余途苍途问道5",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全1000集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/dd4ac532d8b9c7d1a72a029c1c591cc7~tplv-shrink:640:0.image",
+      "intro": "天道倾颓，凡村少年余羡踏上仙途，在郑成王传承试炼中悟得风火山林字诀，与华元都并肩破局。遭同门设局坏去完美金丹机缘后，他重创仇敌、离宗远走，又为岳平峰寻得伪丹重凝之法。尚德秘境中，他连闯八关拜入逍遥仙宗，远赴中州磨炼丹、器、阵、傀儡诸道，最终补成完美金丹。再归东洲，他救下同门、击退李春风，并助十八名伪丹弟子重凝金丹；修至金丹圆满后，他开始筹集七阶材料，为元婴本命法宝布局。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704742001933044760",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 1000
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704857878514895896",
+      "standard_title": "全球死考刚下刑场你让我去考试第六季",
+      "aliases": [
+        "全球死考刚下刑场你让我去考试",
+        "全球死考刚下刑场你让我去考试6"
+      ],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全193集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/6024849f025caf8adf1302c918f24981~tplv-shrink:640:0.image",
+      "intro": "第四副本“超脱”结束，夜林独自归来，丰厚奖励却换不回并肩作战的同伴。为寻找复活之法，他与巡游者周旋，在追杀与契约的夹缝中争取变强的机会。循着黄粱留下的线索，他成功联系现实，为无数等待的人带回希望。李天阳的归来，也让他不再孤身前行。酆都之门即将开启，两人决定携手迎接新的考验。这一次，夜林要带回来的，是那些再也没能归队的人。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704857878514895896",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 193
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704862261008927768",
+      "standard_title": "亲情不是筹码",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全176集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/e3406309d75f81060ffd2709162ef50d~tplv-shrink:640:0.image",
+      "intro": "苏清鸢自幼随外婆长大，十八岁被接回苏家，却发现家人偏爱养女苏雨柔，接她只是想安排一桩她不愿的亲事，替家族解围。看清后，她在庆典上当众表明态度，离开苏家。此后她以设计师鸢尾的身份重新出发，凭原创作品与专业能力参加赛事，澄清被冒名的作品，重建工作室。与顾氏集团合作中，她收获尊重，接手名下权益。她不靠血缘依附，只凭才华与坚守站稳脚跟，赢得属于自己的事业与人生。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704862261008927768",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 176
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704868025396120638",
+      "standard_title": "凡血踏九天捡个仙子做老婆第五季",
+      "aliases": [
+        "凡血踏九天捡个仙子做老婆",
+        "凡血踏九天捡个仙子做老婆5"
+      ],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全144集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/834ef5996297e49968ba1002d7115d01~tplv-shrink:640:0.image",
+      "intro": "雷云岛秘境落幕，周元携至宝与项符瑶重返万相灵宗，可危机并未消散。恶灵谷余孽联合黄金古城强者上门寻仇，昔日排挤他的炼丹派系暗中勾结，布下杀局。大荒巨灵血脉暗藏的秘辛渐渐显露，玄天战镜解锁上古传承。周元催动雷法、驱使血蚊灵虫，在宗门大比迎战各路天骄，一边化解杀局，一边探寻血脉起源，于重重算计中踏出更强的修仙之路。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704868025396120638",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 144
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704881422179257406",
+      "standard_title": "迟到三十年的一声爸",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全74集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/cf9a0b41ad84336250bbb13c4a35a7bc~tplv-shrink:640:0.image",
+      "intro": "齐默为了妻子的遗言坚守真相，却被不明的儿子厌恶。当年，卧病在床的夏青梅需要每日吃药，为了照顾母亲的齐风好心帮忙冲药，却错将老鼠药为母亲服下，最后，夏青梅留下遗言，让他恨你，也不能让他恨自己一辈子。于是，齐默默默承担起一切。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704881422179257406",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 74
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704886689344277529",
+      "standard_title": "提前回家看见爸妈在捡垃圾",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全70集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/319e13a30fa445408a1c6ca5bf6e76be~tplv-shrink:640:0.image",
+      "intro": "林文远白手起家，在海外打拼成为世界五百强盛世集团总裁。他每月托未婚妻刘霜转钱照顾父母，不料刘霜谎称他欠债外逃，侵吞钱款、骗走二老房产退休金，致父母靠捡垃圾度日。林文远回国为父祝寿，撞见真相，愤然揭穿谎言。面对刘家父女与仗势欺人的分公司主管刘继业，他不再隐忍，依法追责，夺回属于父母的一切。最终恶人受惩，父母安享晚年。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704886689344277529",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 70
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704887964689501209",
+      "standard_title": "当家主母的自我修养第三季",
+      "aliases": [
+        "当家主母的自我修养",
+        "当家主母的自我修养3"
+      ],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全150集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/ab75e9dd011abfe51aadc070aed0b236~tplv-shrink:640:0.image",
+      "intro": "宋语棠是宋家流落在外的真千金，因一纸婚约嫁给江家长子江慕言。丈夫江慕言因故沉睡，面对陌生环境与陌生家庭，她以过人见识化解重重困局，不仅赢得公婆信赖，更在家族中站稳脚跟。而江慕言其实早已醒来，只因局势未明，选择隐忍蛰伏。他暗中相助，看她从容应对，心中情愫渐生。当两人终于坦诚相见，便以夫妻之名，同心协力，于家族与事业中开创属于他们的天地。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704887964689501209",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 150
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704890959934262296",
+      "standard_title": "寻龙风水师",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全77集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/b94b38ad36fa22382c3e617260334ced~tplv-shrink:640:0.image",
+      "intro": "皮剑青身负阎王点卯的凶命，自幼在奶奶叮嘱下装疯避祸，还定下五家婚约，盼借婚约熬过十八岁死劫。可奶奶离世后，十八岁生辰当晚，五大家族上门撕毁婚约，百般羞辱。绝境之下他不再伪装，觉醒祖传寻龙诀，精通风水符篆与天医秘术。他四处勘破凶煞、化解灵异诡案，道法医术惊艳玄学各界。当初退婚的家族接连遇祸，又想攀附于他。皮剑青周旋各方势力，一步步揭开阎王点卯隐秘，对抗幕后邪祟，从被人耻笑的傻子，成长为一代天师。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704890959934262296",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 77
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704897385100479512",
+      "standard_title": "穿越农女斗极品第四季",
+      "aliases": [
+        "穿越农女斗极品",
+        "穿越农女斗极品4"
+      ],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全124集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/78edfdf24ae02af7bc23ecc4e6b67e9f~tplv-shrink:640:0.image",
+      "intro": "一朝穿越，乔叶成了成亲当天被堂哥推下水溺死的倒霉村姑，刚睁眼就被污蔑成精怪，全村人要放火烧死她？她将计就计装神弄鬼，反倒成了全村供奉的活福星！反手送黑心堂哥见官，跟吸血娘家一刀两断，还捡了个俊美书生当相公，婆家渣爹后娘轮番作妖，想抢家产逼分家？乔叶分家不可能！全家极品全都留下当长工开农庄、建药庄、办作坊、搞养殖，产业越做越大，小相公更是一路科举高中，成了当朝最年轻的首辅，夫妻联手虐渣搞事业。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704897385100479512",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 124
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704898474566765592",
+      "standard_title": "乌龙成婚全家把我捧成宝",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全125集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/1bc98623ca309176c254d4dffa5842cb~tplv-shrink:640:0.image",
+      "intro": "金店柜员沈悠，为凑母亲手术费，与顾氏总裁顾柏越意外相识。因一场身份乌龙的误会，顾柏越先入为主认定沈悠另有所图，沈悠却不卑不亢转身离开。顾父装穷逛金店被她善待，顾母扮清洁工被她舍命相救，姐姐代班门诊又撞见她，顾家三人分头看中的，竟是同一个姑娘。得知沈悠腹中孩子是自己的，顾柏越主动提出协议结婚。相处中他渐生改观，协议夫妻日久生情，婆婆成闺蜜，全家把她宠成心尖宝。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704898474566765592",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 125
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704902429015280702",
+      "standard_title": "七零这个大嫂不好惹第二季",
+      "aliases": [
+        "七零这个大嫂不好惹",
+        "七零这个大嫂不好惹2"
+      ],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全113集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/d5542038df21500afc74ff5157eea530~tplv-shrink:640:0.image",
+      "intro": "意外来到七十年代的宋薇薇，成了林家长嫂。弟媳曹秀兰难产，她把人送进医院，又向娘家借来一百块钱交手术费。妹妹送来的棉衣正好裹住刚出生的小侄女，妯娌俩也在这场守护中渐渐交心。看着秀兰母女，薇薇对自己的小家也有了主意。她向丈夫林卫东说出心愿，等两人准备好了，再迎接孩子。卫东把这话听进心里，一边争取修水渠的活儿，一边琢磨着攒下两个人的家底。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704902429015280702",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 113
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704907654467947544",
+      "standard_title": "穿书七零年自带空间甜又飒2",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全169集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/17ef754064f2837b9337c806e1d1b05f~tplv-shrink:640:0.image",
+      "intro": "神医明黛穿书七零，携千亿空间下乡避祸，开局反手将极品表哥送去最苦西荒！下乡途中，她竟顺手驯服了令人闻风丧胆的“打人疯霸”周斯年。智商退化的周斯年化身忠犬大宝，白天扎红头巾织毛衣、暴捶无赖，晚上泡药汤、蹭饭求顺毛。且看两人如何靠美食蔬菜玩转冰雪北大荒，暴富虐渣，携手揭开惊天身世大秘！",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704907654467947544",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 169
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704911377567058969",
+      "standard_title": "修仙五百年地球才过一个暑假",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全99集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/5495fbe5c0bb79fbeba4e58e949e6399~tplv-shrink:640:0.image",
+      "intro": "陈默意外穿越修仙界，苦修五百年终成元婴仙尊，借神秘海螺重返地球，却惊觉人间只过了一个暑假。此时父母正被逼债，自己又遭江家退婚羞辱。他一怒横扫恩怨、快意复仇，更广撒道种收徒传道，靠弟子修炼反哺自身青梅江依诺、百岁医圣林沧海、寒毒女王沈青鸾皆入其门。望仙山遗迹开启，他竟发现道侣洛倾城的本体冰封于此，更获万年秘藏传承，一举踏入元婴巅峰，自此人间无敌。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704911377567058969",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 99
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704915436629920792",
+      "standard_title": "胭脂刃2之宫锁未央",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全63集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/7230db9b84592eae78e1a2f88f38549c~tplv-shrink:640:0.image",
+      "intro": "上一世，相府嫡女李未央与庶女李清儿同嫁阿哥府，十年后李未央嫁的八阿哥登上了皇位，而李清儿所嫁的四阿哥却纨绔好色，最后被全家流放。心怀不甘的李清儿残忍杀害了李未央，而李未央也迅速反击，二人双双重生回了十年前的大婚之日，李清儿立马要求换嫁！李未央笑了，老八昏庸无能，前世全靠她铺路才登上皇位，你要的话拿去好了。至于四阿哥，谁说他是真纨绔？",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704915436629920792",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 63
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704919336128891929",
+      "standard_title": "天降萌娃三岁半我无痛当妈",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全185集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/226cf1da02a0daf21c2abfb3dec1775b~tplv-shrink:640:0.image",
+      "intro": "21世纪大学生齐诗语意外穿书到1985年，遇上来自十年后的三岁亲生女儿。为备战考试，她将萌娃托付给未来丈夫、冷面厂长季铭轩，自己靠画画、摆摊创业，并考取省理科状元。萌娃频频助攻，让冷面厂长逐渐化身女儿奴。齐诗语赴京团聚，与季铭轩共患难后确认彼此身份。面对他提出定亲，她坚持感情不能由未来决定，一场先有萌娃后恋爱的年代甜宠故事由此展开。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704919336128891929",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 185
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704937244787756057",
+      "standard_title": "被拐到小山村我一定要逃出魔掌",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全53集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/17072b6c34d2355d26b28994f8ac4023~tplv-shrink:640:0.image",
+      "intro": "大学生许知夏不幸落入不法分子圈套，她找准时机脱身求救，途中还遭遇不法人员的阻拦算计。许知夏保持冷静，凭借机敏躲开险境，悄悄收集到该犯罪团伙的关键证据。她一路坚持，成功找到警务站点报案。警方根据线索迅速开展行动，打掉这个犯罪团伙，相关涉案人员依法受到惩处。许知夏平安和家人团聚，重归正常生活。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704937244787756057",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 53
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704938307628583960",
+      "standard_title": "纨绔世子的白月光郡主",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全142集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/5845f796ff83687e4efa117d4df21953~tplv-shrink:640:0.image",
+      "intro": "镇国公府嫡女宋时安常被家族倾覆的噩梦惊扰，察觉兄长宋长瑾被寄住府中的孤女薛妍初步步蒙蔽，恐累及家门。为护住家族、拉回兄长，她当众扬言非京城纨绔赵云璟不嫁，以此断旁人念想。宋时安执掌中馈彻查内账，屡屡拆穿薛妍初的算计。本是挡箭牌的赵云璟却频频配合演戏、暗中相助，二人从各怀心思的盟友渐生情愫。深宫储位风波暗涌，这场始于自保的算计，正将所有人推向未知棋局",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704938307628583960",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 142
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704938678010792984",
+      "standard_title": "婚礼当天我选择做自己",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全53集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/2f579b77ea1af85adeb46e15f4279473~tplv-shrink:640:0.image",
+      "intro": "婚礼当天，陈丽娟要周晓雨和刘承礼抚养自己的儿子、每月给钱。刘承礼竟站在大嫂一边。周晓雨当众反击，揭穿荒唐算计，决意离婚。拉扯中她不幸受伤，刘家仍只算计财产。最终她与刘承礼离婚，陈丽娟的骗局也被揭穿。周晓雨专注事业，彻底走出泥潭。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704938678010792984",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 53
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704940178292362265",
+      "standard_title": "换婚病危世子她靠绝世医术赢麻了",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全208集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/c7428585c75cd57ae2df05750ff075ce~tplv-shrink:640:0.image",
+      "intro": "现代顶尖女医生因过劳猝死，穿越成永安伯府备受欺负的二小姐余元筝。刚睁眼就惨遭重生堂姐余朝阳算计，被塞进床底，眼睁睁看着堂姐抢走原夫君上官子书，而自己则被替嫁给荣王府活不过半年的植物人世子上官子棋。面对必死之局，余元筝丝毫不慌。她重操旧业，化身神秘莫测的“曾神医”。她不仅暗中用针灸和放血疗法，暗中救治上官子棋；在外结交权贵，靠着现代急救知识连救数人。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704940178292362265",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 208
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704940709987486744",
+      "standard_title": "姐妹同选蛊命运两相殊",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全44集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/a8ebb757482e644647f0d6c4f80d44c0~tplv-shrink:640:0.image",
+      "intro": "沈家姐妹十八岁生辰，苗疆阿婆取出两枚功效迥异的奇虫，让姐妹二人各自选择。姐姐选定玲珑虫，妹妹则接受另一份考验。此后，姐姐如愿入宫，妹妹却选择离开沈家，远赴苗寨。随着宫中风波渐起，姐妹二人的选择逐渐显露出不同结局。一次次意外，让妹妹意外卷入宫廷与边境的纷争，也让她逐渐明白，真正想要的人生，从来不在深宫之中。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704940709987486744",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 44
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704942166996438078",
+      "standard_title": "冰崖归来神鹿带我寻山珍",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全95集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/99fb99d8b807c627f18e534016c160de~tplv-shrink:640:0.image",
+      "intro": "梁守山遭昔日同伴算计坠入冰崖，危难之际救下白鹿神鹿娃，得灵兽相助拥有感知山林万物的能力。他背负巨额违约欠款，一边对抗对手的百般阻挠，一边深入黑风岭群山，寻山珍、救助珍稀野兽。途中结识果敢的沈雁秋，二人结伴闯险山，找寻失踪的前辈踪迹。他摒弃私念，牵头组建山货合作队伍，带领乡亲依规开发山林资源，守护黑风岭生灵，从落魄赶山人蜕变为心怀大义的守山人。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704942166996438078",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 95
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704943473257876504",
+      "standard_title": "股市狂赚五亿回县城当咸鱼",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全172集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/2c3c60318487833d9a614af823463ebb~tplv-shrink:640:0.image",
+      "intro": "林晨阳在深圳拼搏五年，凭借专业能力积累可观身家，看淡金融行业高压内卷，选择回到家乡青禾县开启新生活。回乡之后，他坦然面对亲友、同学的不同眼光，不张扬财富，踏实低调过日子。机缘之下接手本地烂尾大楼，联合专业人员筹备打造青禾国际大酒店，助力县城城市建设与就业发展。生活里他体谅父母，珍视亲情，善待身边的朋友与故人，坦然面对过往的青春际遇。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704943473257876504",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 172
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704944505446747161",
+      "standard_title": "重生七零当教官我救了姐姐一家子",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全160集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/bac8384e3990431786a7e00593dffc44~tplv-shrink:640:0.image",
+      "intro": "前世齐跃进被毒妻与奸夫榨干八个姐姐血汗，替仇人养儿四十年，含恨惨死竟重生回1975年。看着被逼跳河的七姐、被婆家压榨的众姐姐，他当场撕毁吸血剧本，反手送仇人下乡插队，凭随身古玉灵泉空间与前世记忆，修重卡赢三辆拖拉机、开荒捕鼠、养黑蜂挖百年山参，打脸极品恶婆婆与假千金，从普通的支农青年一路逆袭暴富，护全家逆天改命，更救下被调包的真千金白思涵，闯出滚烫开挂人生。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704944505446747161",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 160
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704945092036922392",
+      "standard_title": "穿越古代农女有空间暴富了",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全271集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p3-novel.byteimg.com/novel-pic/99295cbd4257c665f775aa8f8e8305d9~tplv-shrink:640:0.image",
+      "intro": "文溪意外穿越至古代农家，携灵泉空间毅然带着母亲与弟弟脱离苛待的宗族，自立门户开启新生活。她凭借自身胆识与空间助力，进山采药狩猎、操持营生，一步步改善家境，照料家人养好身体。途中与心怀仁善的陆凛相遇相知、彼此扶持。面对旧日纷扰与生活难关，她从容应对，靠着双手与智慧，将清贫日子过得愈发红火安稳。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704945092036922392",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 271
+      }
+    },
+    {
+      "source": "hongguo",
+      "source_url": "https://hongguoduanju.com/detail?series_id=7704947085769968665",
+      "standard_title": "听见宝宝心声裴总非我不娶",
+      "aliases": [],
+      "record_no": null,
+      "actors": [],
+      "tags": [
+        "全51集"
+      ],
+      "is_ai_drama": false,
+      "cover_url": "https://p6-novel.byteimg.com/novel-pic/9386f792ce7ed9107eadf0641e45b08d~tplv-shrink:640:0.image",
+      "intro": "护士夏琳拥有感知婴儿心声的特殊能力，在豪门VIP病房，她捕捉到病危诺亚的求救信号，发现特制奶瓶被人做了手脚，揪出蓄意加害孩子的薇拉与勾结的医生。夏琳全力救治诺亚，与总裁裴斯年在共患难中互生好感，成功粉碎绑架图谋。她坚守医护初心，深耕婴幼儿行为观察领域，事业有所建树，也收获了美满的家庭。",
+      "platform_links": [
+        {
+          "platform": "红果短剧",
+          "h5_url": "https://hongguoduanju.com/detail?series_id=7704947085769968665",
+          "scheme": null,
+          "valid": true
+        }
+      ],
+      "raw": {
+        "episodes": 51
       }
     }
   ]
